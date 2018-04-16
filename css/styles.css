@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+#img-background-main {
+    position: fixed;
+    background-image: url(../img/background-primary.jpg);
+}
+#filter-background-main {
+    position: fixed;
+    background-color: rgba(12, 13, 14, .75);
+}
+
+/* index.html */
+#profile-drawer {
+    background-image: url(../img/developers/profile-dev-2.jpg);
+}
+
+/*
+PAGE
+*/
+.main-page {
+    position: absolute;
+    height: auto;
+    background-color: var(--background-color-primary);
+    transition:
+        all .3s,
+        height .3s,
+        margin-left .3s,
+        margin-top .15s,
+        margin-bottom .15s;
+}
+
+/*
+HEADER
+*/
+
+
+/*
+CUERPO CONTAINER
+*/
+.container-main {
+    position: relative;
+    height: var(--container-main-height);
+    overflow: auto; /*Muestra scroll*/
+    transition: all .3s;
+}
+.container-main .banner {
+    height: var(--container-main-height);
+}
+#img-background-banner {
+    background-image: url(../img/banner-projects.jpg);
+}
+
+#fab-go-top {
+    position: fixed;
+    bottom: -3rem;
+    right: 1.5rem;
+}
+
+
+/*
+MODAL
+ */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    overflow: auto;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 16px;
+    border-radius: 3px;
+    background-color: #1C1C1F;
+
+    width: 50%;
+    height: 85%;
+}
+#banner-dev-1 {
+    background-image: url(../img/developers/banner-profile-1.jpg);
+}
+#profile-dev-1 {
+    background-image: url(../img/developers/profile-dev-1.jpg);
+}

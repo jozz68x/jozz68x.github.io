@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin.php #indica a los robots que no deben indexar el /admin.php
+Disallow: /admin/ #ni nada del directorio /admin.
+Sitemap: http://misitio.com/sitemap #incluye una referencia al sitemap del sitio Web

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Jose Diaz</title>
+    <meta name="description" content="Hola, soy Jose Diaz. Analista Desarrollador Android e iOS y diseñador UX/UI" />
+    <meta name="author" content="Jose Diaz" />
+    <meta name="keywords" content="portfolio, skills, developer, mobile developer, android developer, ios developer, android, material, material design, kotlin, java, javascript, css, html, python, frontend, designer, UI/UX, ios, swift" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- ICONO -->
+    <link type="image/png" rel="shortcut icon" href="img/logo.png">
+    <link type="image/x-icon" rel="icon" href="img/logo.png" sizes="48x48"/>
+
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="#121314"> <!-- Chrome, Firefox OS and Opera -->
+    <meta name="msapplication-navbutton-color" content="#121314"> <!-- Windows Phone -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- iOS Safari -->
+
+    <!-- Open Graph data -->
+        <meta property="og:title" content="Jahir Fiquitiva"/>
+        <meta property="og:type" content="portfolio"/>
+        <meta property="og:url" content="https://www.jahirfiquitiva.me/"/>
+        <meta property="og:image"
+              content="https://github.com/jahirfiquitiva/Website-Resources/raw/master/myself/logo-full-sm.png"/>
+        <meta property="og:description"
+              content="A website to show information about me, my skills and my portfolio"/>
+        <meta property="og:site_name" content="Jahir Fiquitiva"/>
+        <meta property="og:locale" content="en_US"/>
+        <link rel="canonical" href="https://www.jahirfiquitiva.me/"/>
+
+
+    <!-- Twitter -->
+        <!-- Twitter Card data -->
+        <meta name="twitter:card"
+              content="A website to show information about me, my skills and my portfolio">
+        <meta name="twitter:site" content="@jahirfiquitiva">
+        <meta name="twitter:title" content="Jahir Fiquitiva">
+        <meta name="twitter:description"
+              content="A website to show information about me, my skills and my portfolio">
+        <meta name="twitter:creator" content="@jahirfiquitiva">
+        <!-- Twitter summary card with large image must be at least 280x150px -->
+        <meta name="twitter:image:src"
+              content="https://github.com/jahirfiquitiva/Website-Resources/raw/master/myself/logo-full-sm.png">
+
+    <!-- ESTILOS  -->
+    <link type="text/css" rel="stylesheet" href="css/values.css" />
+    <link type="text/css" rel="stylesheet" href="css/default.css" />
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <link type="text/css" rel="stylesheet" href="css/general.css" />
+    <link type="text/css" rel="stylesheet" href="css/widgets.css" />
+    <link type="text/css" rel="stylesheet" href="css/responsive.css" />
+
+    <!-- ICON-FONTS -->
+    <link type="text/css" rel="stylesheet" href="fonts/icon-font/icon-font.css">
+
+    <!-- NORMALIZE  -->
+    <link type="text/css" rel="stylesheet" href="plugins/normalize/normalize.css" />
+    <!-- JQUERY -->
+    <script src="/plugins/jquery/jquery-3.2.1.js"></script>
+    <script src="/plugins/jquery/jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body class="font-appearance-light font-size-normal">
+
+    <div id="img-background-main" class="img-background"></div>
+    <div id="filter-background-main" class="img-background"></div>
+
+    <!-- MODAL -->
+    <div class="modal align-center center-absolute elevation-index-7">
+        <div id="profile-dev-1" class="dev-perfil img-circle"></div>
+        <div id="banner-dev-1" class="dev-banner"></div>
+        <div class="dev-info">
+            <h1 class="dev-title font-appearance-light font-size-xlarge text-accent2">Jose Diaz</h1>
+            <blockquote class="font-appearance-regular font-size-normal text-secondary align-justify">
+                <p class="dev-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cupiditate aliquam libero, porro iste molestiae, explicabo veritatis voluptatibus! Tenetur, a?
+                </p>
+                <p class="dev-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem vero architecto saepe nesciunt distinctio, magnam dicta et libero quod eaque similique impedit, reprehenderit mollitia sed delectus nostrum provident fugit neque deserunt sapiente omnis iusto ex! Voluptate delectus veritatis consectetur laudantium nobis culpa accusantium, libero tenetur eveniet eum, fuga autem earum.
+                </p>
+            </blockquote>
+            <a href="mailto:jozz.18x@gmail.com" class="dev-btn btn btn-rounded-accent">
+                <div class="ripple-container-flat">
+                    <span class="ripple-effect-flat"></span>
+                </div>Contacto
+            </a>
+            <div class="divider divider-dark"></div>
+            <div class="dev-social font-size-large">
+                <a href="#" title="Ir a Google Plus" class="column-item-static-3">
+                    <div class="ripple-container-widget">
+                        <span class="ripple-effect-widget"></span>
+                    </div>
+                    <span class="icon-google-plus"></span>
+                </a>
+                <a href="#" title="Ir a Twitter" class="column-item-static-3">
+                    <div class="ripple-container-widget">
+                        <span class="ripple-effect-widget"></span>
+                    </div>
+                    <span class="icon-twitter"></span>
+                </a>
+                <a href="#" title="Ir a Github" class="column-item-static-3">
+                    <div class="ripple-container-widget">
+                        <span class="ripple-effect-widget"></span>
+                    </div>
+                    <span class="icon-github"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL -->
+
+    <!-- DIALOG ALERT -->
+    <div id="dim-screen-dialog" class="dim-screen elevation-index-6"></div>
+    <div class="dialog dialog-alert center-absolute elevation-index-7">
+        <h2 class="dialog-title font-appearance-regular font-size-large text-accent2 align-center">Lorem ipsum dolor sit amet.</h2>
+        <p class="dialog-message text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aperiam inventore non laborum dolorum laboriosam fugiat quae est aliquid, neque reprehenderit, impedit nisi quaerat ad, ex cumque necessitatibus possimus at.</p>
+        <div class="dialog-actions align-center">
+            <button type="button" class="btn-dialog-negative btn btn-flat font-appearance-regular font-size-normal">Aceptar</button>
+        </div>
+    </div>
+    <!-- FIN DIALOG ALERT -->
+
+    <!-- DIALOG CONFIRM -->
+    <div class="dialog dialog-confirm center-absolute elevation-index-7">
+        <h2 class="dialog-title font-appearance-regular font-size-large  text-accent2 align-center">Lorem ipsum dolor sit amet.</h2>
+        <p class="dialog-message text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aperiam inventore non laborum dolorum laboriosam fugiat quae est aliquid, neque reprehenderit, impedit nisi quaerat ad, ex cumque necessitatibus possimus at.</p>
+        <div class="dialog-actions align-center">
+            <div class="divider divider-dark"></div>
+            <button type="button" class="btn-dialog-negative btn btn-flat font-appearance-regular font-size-normal">Cancelar</button>
+            <button type="button" class="btn-dialog-positive btn btn-flat font-appearance-regular font-size-normal">Aceptar</button><div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- FIN DIALOG CONFIRM -->
+
+    <!-- MENU DRAWER -->
+    <!-- <div id="dim-screen-drawer" class="dim-screen elevation-index-4"></div> -->
+    <aside id="drawer-main" class="drawer elevation-index-3 unselect center-vertical">
+        <div class="drawer-container">
+            <div class="drawer-header align-center">
+                <div class="container" onclick="showModal();">
+                    <div class="ripple-container-widget">
+                        <span class="ripple-effect-widget"></span>
+                    </div>
+                    <div id="profile-drawer" class="profile img-circle">
+                        <div class="ripple-container-flat">
+                            <span class="ripple-effect-flat"></span>
+                        </div>
+                    </div>
+                    <h1 class="title">Jose Diaz</h1>
+                    <small class="subtitle">Desarrollador fronted  y diseñador UX/UI</small>
+                </div>
+                <div class="social columns font-size-normal align-center">
+                    <a href="#" title="Ir a google plus" class="drawer-item column-3 is-widget"  onclick="showDialogConfirm('Google Plus', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nihil sunt culpa praesentium atque natus nam quos vel amet. Odit nostrum porro et optio debitis impedit enim culpa, obcaecati quibusdam.');">
+                        <div class="ripple-container-widget">
+                            <span class="ripple-effect-widget"></span>
+                        </div>
+                        <span class="icon-google-plus"></span>
+                    </a>
+                    <a href="#" title="Ir a twitter" class="drawer-item column-3 is-widget"  onclick="showDialogConfirm('Twitter', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores veniam deserunt, ratione iusto asperiores molestiae voluptatibus nisi, aut temporibus esse enim, nihil architecto magni veritatis minus amet possimus odio necessitatibus.');">
+                        <div class="ripple-container-widget">
+                            <span class="ripple-effect-widget"></span>
+                        </div>
+                        <span class="icon-twitter"></span>
+                    </a>
+                    <a href="#" title="Ir a github" class="drawer-item column-3 is-widget"  onclick="showDialogConfirm('Github', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aliquam, obcaecati, recusandae odit earum vel iure sequi explicabo quam a ullam repellat iste. Tempora nisi minima quia dicta quo corporis.');">
+                        <div class="ripple-container-widget">
+                            <span class="ripple-effect-widget"></span>
+                        </div>
+                        <span class="icon-github"></span>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <nav class="drawer-nav font-appearance-regular">
+                <div class="divider divider-dark"></div>
+                <ul id="drawer-menu" class="align-center">
+                    <li><a href="/" class="drawer-item">Home</a></li>
+                    <li class="divider divider-dark"></li>
+                    <li><a href="/pages/about.html" class="drawer-item">About</a></li>
+                    <li class="divider divider-dark"></li>
+                    <li><a href="/pages/skills.html" class="drawer-item">Skills</a></li>
+                    <li class="divider divider-dark"></li>
+                    <li><a href="/pages/projects.html" class="drawer-item">Projects</a></li>
+                    <li class="divider divider-dark"></li>
+                    <li><a href="/pages/blog.html" class="drawer-item" onclick="showDialogAlert('Proximamente', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti beatae officia facere quos nisi, sed laboriosam impedit ex repudiandae sequi, saepe sit est quae non. Ea reprehenderit inventore suscipit impedit quisquam alias a, nam provident explicabo perspiciatis. Praesentium, in neque alias ducimus cupiditate dolorum nisi harum quod doloribus explicabo voluptas.');">Blog<span class="pull-right">Coming soon</span></a></li>
+                    <li class="divider divider-dark"></li>
+                    <li><a href="/pages/contact.html" class="drawer-item">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <!-- FIN MENU DRAWER -->
+
+    <!-- PAGE -->
+    <div class="main-page elevation-index-4">
+
+        <!-- TOOLBAR -->
+        <header class="toolbar elevation-index-3 elevation-shadow-normal unselect">
+            <span class="toolbar-icon icon-menu font-size-normal" title=""></span>
+            <h1 class="toolbar-title">Home</h1>
+            <nav class="toolbar-menu">
+                <a href="#">
+                    <span class="icon-pie-chart"></span><span>Home</span>
+                </a>
+                <a href="#">
+                    <span class="icon-credit-card"></span><span>About</span>
+                </a>
+                <a href="#">
+                    <span class="icon-coin-dollar"></span><span>Skills</span>
+                </a>
+                <a href="#" onclick="showDialogAlert('Proximamente', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti beatae officia facere quos nisi, sed laboriosam impedit ex repudiandae sequi, saepe sit est quae non. Ea reprehenderit inventore suscipit impedit quisquam alias a, nam provident explicabo perspiciatis. Praesentium, in neque alias ducimus cupiditate dolorum nisi harum quod doloribus explicabo voluptas.');">
+                    <span class="icon-feed"></span><span>Projects</span>
+                </a>
+                <a href="#">
+                    <span class="icon-wrench"></span><span>Contact</span>
+                </a>
+            </nav>
+        </header>
+        <!-- FIN TOOLBAR -->
+
+        <!-- CONTENEDOR PRINCIPAL -->
+        <div id="container-inflate" class="clearfix">
+        </div>
+        <!-- FIN CONTENEDOR PRINCIPAL -->
+
+        <!-- FAB GO TOP -->
+        <button title="Subir" id="fab-go-top" class="fab small show-fab elevation-index-5">
+            <span class="icon-ctrl"></span>
+        </button>
+        <!-- FIN FAB GO TOP -->
+
+    </div>
+    <!-- FIN PAGE -->
+
+    <script>
+        $(document).ready(function () {
+            var PREF_COLLAPSE_PAGE = 'PREF_COLLAPSE_PAGE';
+            var PREF_LAST_SELECTED_ITEM = 'PREF_LAST_SELECTED_ITEM';
+            //https://stackoverflow.com/a/25043441/7999917
+
+            var $itemDrawerHome = $('#drawer-menu').find('li:eq(0)').has('a').children();
+            var $itemDrawerAbout = $('#drawer-menu').find('li:eq(2)').has('a').children();
+            var $itemDrawerSkills = $('#drawer-menu').find('li:eq(4)').has('a').children();
+            var $itemDrawerProjects = $('#drawer-menu').find('li:eq(6)').has('a').children();
+            var $itemDrawerBlog = $('#drawer-menu').find('li:eq(8)').has('a').children();
+            var $itemDrawerContact = $('#drawer-menu').find('li:eq(10)').has('a').children();
+
+            var $itemToolbarHome = $('.toolbar-menu').find('a:eq(0)');
+            var $itemToolbarAbout = $('.toolbar-menu').find('a:eq(1)');
+            var $itemToolbarSkills = $('.toolbar-menu').find('a:eq(2)');
+            var $itemToolbarProjects = $('.toolbar-menu').find('a:eq(3)');
+            var $itemToolbarBlog = $('.toolbar-menu').find('a:eq(4)');
+            var $itemToolbarContact = $('.toolbar-menu').find('a:eq(5)');
+
+            var $toolbarTitle = $('.toolbar-title');
+
+            $itemDrawerHome.on('click', function (e) {
+                e.preventDefault();
+                cleanItems();
+                $("#container-inflate").find('#include-body').remove();
+                $("#container-inflate").load("/pages/home.html");
+                localStorage.setItem(PREF_LAST_SELECTED_ITEM, 0);
+                $itemDrawerHome.addClass('active');
+                $itemToolbarHome.addClass('active');
+                $toolbarTitle.text('Home');
+            });
+            $itemDrawerAbout.on('click', function (e) {
+                e.preventDefault();
+                cleanItems();
+                $("#container-inflate").find('#include-body').remove();
+                $("#container-inflate").load("/pages/about.html");
+                localStorage.setItem(PREF_LAST_SELECTED_ITEM, 1);
+                $itemDrawerAbout.addClass('active');
+                $itemToolbarAbout.addClass('active');
+                $toolbarTitle.text('About');
+            });
+            $itemDrawerSkills.on('click', function (e) {
+                e.preventDefault();
+                cleanItems();
+                $("#container-inflate").find('#include-body').remove();
+                $("#container-inflate").load("/pages/skills.html");
+                localStorage.setItem(PREF_LAST_SELECTED_ITEM, 2);
+                $itemDrawerSkills.addClass('active');
+                $itemToolbarSkills.addClass('active');
+                $toolbarTitle.text('Skills');
+            });
+            $itemDrawerProjects.on('click', function (e) {
+                e.preventDefault();
+                cleanItems();
+                $("#container-inflate").find('#include-body').remove();
+                $("#container-inflate").load("/pages/projects.html");
+                localStorage.setItem(PREF_LAST_SELECTED_ITEM, 3);
+                $itemDrawerProjects.addClass('active');
+                $itemToolbarProjects.addClass('active');
+                $toolbarTitle.text('Projects');
+            });
+            $itemDrawerBlog.on('click', function (e) {
+                e.preventDefault();
+                cleanItems();
+                $("#container-inflate").find('#include-body').remove();
+                $("#container-inflate").load("/pages/blog.html");
+                localStorage.setItem(PREF_LAST_SELECTED_ITEM, 4);
+                $itemDrawerBlog.addClass('active');
+                $itemToolbarBlog.addClass('active');
+                $toolbarTitle.text('Blog');
+            });
+            $itemDrawerContact.on('click', function (e) {
+                e.preventDefault();
+                cleanItems();
+                $("#container-inflate").find('#include-body').remove();
+                $("#container-inflate").load("/pages/contact.html");
+                localStorage.setItem(PREF_LAST_SELECTED_ITEM, 5);
+                $itemDrawerContact.addClass('active');
+                $itemToolbarContact.addClass('active');
+                $toolbarTitle.text('Contact');
+            });
+
+            function cleanItems(){
+                $.each([ 0,2,4,6,8,10 ], function( index, value ) {
+                    $('#drawer-menu').find('li:eq(' + value + ')').has('a').children().removeClass('active');
+                });
+                $.each([ 0,1,2,3,4,5 ], function( index, value ) {
+                    $('.toolbar-menu').find('a:eq(' + value + ')').removeClass('active');
+                });
+            }
+        });
+    </script>
+
+    <script>
+        /**
+         * Muestra la ventana modal.
+         * @return {[type]} Visibilidad del modal.
+         */
+         function showModal(){
+            var $dimScreenDialog = $('#dim-screen-dialog');
+            var $modal = $('.modal');
+
+            $modal.toggleClass('show');
+            $dimScreenDialog.addClass('show-dim-screen');
+        }
+        /**
+         * Muestra el dialogo de alerta.
+         * @param  {string} title   Titulo del dialogo a mostrar.
+         * @param  {string} message Mensaje del dialogo a mostrar.
+         * @return {[type]}         Visibilidad del dialogo.
+         */
+         function showDialogAlert(title, message){
+            var $dimScreenDialog = $('#dim-screen-dialog');
+            var $dialog = $('.dialog-alert');
+            var $dialogTitle = $('.dialog-title');
+            var $dialogMessage = $('.dialog-message');
+
+            $dialogTitle.html(title);
+            $dialogMessage.html(message);
+            $dialog.toggleClass('dialog-show');
+            $dimScreenDialog.addClass('show-dim-screen');
+        }
+        /**
+         * Muestra el dialogo de confirmación.
+         * @param  {string} title   Titulo del dialogo a mostrar.
+         * @param  {string} message Mensaje del dialogo a mostrar.
+         * @return {[type]}         Visibilidad del dialogo.
+         */
+         function showDialogConfirm(title, message){
+            var $dimScreenDialog = $('#dim-screen-dialog');
+            var $dialog = $('.dialog-confirm');
+            var $dialogTitle = $('.dialog-title');
+            var $dialogMessage = $('.dialog-message');
+
+            $dialogTitle.html(title);
+            $dialogMessage.html(message);
+            $dialog.toggleClass('dialog-show');
+            $dimScreenDialog.addClass('show-dim-screen');
+        }
+    </script>
+
+    <script>
+        //CONSTANTS
+        var PREF_COLLAPSE_PAGE = 'PREF_COLLAPSE_PAGE';
+        var PREF_LAST_SELECTED_ITEM = 'PREF_LAST_SELECTED_ITEM';
+
+        //METODS
+        function loadShared(){
+            window.addEventListener('storage', onProcessCollapsePage, false);
+            onProcessCollapsePage();
+            window.addEventListener('storage', onProcessLastSelectedItem, false);
+            onProcessLastSelectedItem();
+            //localStorage.clear();
+        }
+        /**
+         * Obtiene el shared storage y valida.
+         * @return {[type]} [description]
+         */
+         function onProcessCollapsePage(){
+            var valueCollapsePage = localStorage.getItem(PREF_COLLAPSE_PAGE);
+            var $drawer = $('#drawer-main');
+            var $container = $('#include-body');
+            var $pageContainer = $('.main-page');
+            var $toolbar = $('.toolbar');
+            if (valueCollapsePage == 'true') {
+                $drawer.addClass('show-drawer');
+                $pageContainer.addClass('collapse-page');
+                //$toolbar.removeClass("toolbar-fixed");
+                //$container.addClass("custom-scroll");
+            } else if (valueCollapsePage == 'false') {
+                $drawer.removeClass('show-drawer');
+                $pageContainer.removeClass('collapse-page');
+                //$toolbar.addClass("toolbar-fixed");
+                //$container.removeClass("custom-scroll");
+            } else {
+                return;
+            }
+        }
+        /**
+         * Obtiene el shared storage y valida.
+         * @return {[type]} [description]
+         */
+         function onProcessLastSelectedItem(){
+            var valueLastSelectedItem = localStorage.getItem(PREF_LAST_SELECTED_ITEM);
+            if (valueLastSelectedItem === null || valueLastSelectedItem.length === 0){
+                localStorage.setItem(PREF_LAST_SELECTED_ITEM, 0);
+            }
+
+            var $itemDrawerHome = $('#drawer-menu').find('li:eq(0)').has('a').children();
+            var $itemDrawerAbout = $('#drawer-menu').find('li:eq(2)').has('a').children();
+            var $itemDrawerSkills = $('#drawer-menu').find('li:eq(4)').has('a').children();
+            var $itemDrawerProjects = $('#drawer-menu').find('li:eq(6)').has('a').children();
+            var $itemDrawerBlog = $('#drawer-menu').find('li:eq(8)').has('a').children();
+            var $itemDrawerContact = $('#drawer-menu').find('li:eq(10)').has('a').children();
+
+            var $itemToolbarHome = $('.toolbar-menu').find('a:eq(0)');
+            var $itemToolbarAbout = $('.toolbar-menu').find('a:eq(1)');
+            var $itemToolbarSkills = $('.toolbar-menu').find('a:eq(2)');
+            var $itemToolbarProjects = $('.toolbar-menu').find('a:eq(3)');
+            var $itemToolbarBlog = $('.toolbar-menu').find('a:eq(4)');
+            var $itemToolbarContact = $('.toolbar-menu').find('a:eq(5)');
+
+            var $toolbarTitle = $('.toolbar-title');
+
+            function cleanItems(){
+                $.each([ 0,2,4,6,8,10 ], function( index, value ) {
+                    $('#drawer-menu').find('li:eq(' + value + ')').has('a').children().removeClass('active');
+                });
+                $.each([ 0,1,2,3,4,5 ], function( index, value ) {
+                    $('.toolbar-menu').find('a:eq(' + value + ')').removeClass('active');
+                });
+            }
+
+            cleanItems();
+
+            if (valueLastSelectedItem == "0") {
+                $itemDrawerHome.addClass('active');
+                $itemToolbarHome.addClass('active');
+                $("#container-inflate").find('#include-body').remove();
+                $("#container-inflate").load("/pages/home.html");
+                $toolbarTitle.text('Home');
+            } else if (valueLastSelectedItem == "1") {
+                $itemDrawerAbout.addClass('active');
+                $itemToolbarAbout.addClass('active');
+                $("#container-inflate").find('#include-body').remove();
+                $("#container-inflate").load("/pages/about.html");
+                $toolbarTitle.text('About');
+            } else if (valueLastSelectedItem == "2") {
+                $itemDrawerSkills.addClass('active');
+                $itemToolbarSkills.addClass('active');
+                $("#container-inflate").find('#include-body').remove();
+                $("#container-inflate").load("/pages/skills.html");
+                $toolbarTitle.text('Skills');
+            } else if (valueLastSelectedItem == "3") {
+                $itemDrawerProjects.addClass('active');
+                $itemToolbarProjects.addClass('active');
+                $("#container-inflate").find('#include-body').remove();
+                $("#container-inflate").load("/pages/projects.html");
+                $toolbarTitle.text('Projects');
+            } else if (valueLastSelectedItem == "4") {
+                $itemDrawerBlog.addClass('active');
+                $itemToolbarBlog.addClass('active');
+                $("#container-inflate").find('#include-body').remove();
+                $("#container-inflate").load("/pages/blog.html");
+                $toolbarTitle.text('Blog');
+            } else if (valueLastSelectedItem == "5") {
+                $itemDrawerContact.addClass('active');
+                $itemToolbarContact.addClass('active');
+                $("#container-inflate").find('#include-body').remove();
+                $("#container-inflate").load("/pages/contact.html");
+                $toolbarTitle.text('Contact');
+            } else {
+                return;
+            }
+        }
+        window.addEventListener('load', loadShared, false);
+    </script>
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="/js/jquery/utils.js"></script>
+    <script type="text/javascript" src="/js/utils.js"></script>
+    <script type="text/javascript" src="/js/constants.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,794 @@
+@charset "utf-8";
+/*
+ RESPONSIVE.
+*/
+
+/* Extra small devices (phones, less than 768px) */
+
+@media only screen and (max-width: 768px) {
+    :root {
+        /**
+         * [dimens description]
+         * @type {[dimens]}
+         */
+         --toolbar-height: 48px;
+
+         --text-size-display: 56px;
+         --text-size-header: 36px;
+         --text-size-title: 24px;
+         --text-size-content: 16px;
+         --text-size-body: 12px;
+         --text-size-mini: 10px;
+    }
+
+    /**
+     * Responsive for file --> style.css
+     *
+     */
+    /* BANNER */
+    /* CUERPO CONTAINER */
+    /* FOOTER */
+    .footer-foo {
+        line-height: 3rem;
+        background-color: #314047;
+        box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 8px;
+    }
+    .footer-foo address.slogan-developer-site {
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 70%;
+        display: block;
+        line-height: 2rem;
+        margin: auto;
+        border-top: 1px solid rgba(0, 0, 0, .25);
+    }
+    /**
+     * Responsive for file --> about.html
+     *
+     */
+    /* BANNER */
+    .padding-layout-banner-about {
+        padding: 0 0 1rem 0;
+    }
+    #content-tab-one {
+        padding: 1rem 1rem 0 1rem;
+    }
+    #content-tab-one .container-logo {
+        padding-right: 0rem;
+        margin-bottom: 1rem;
+    }
+    #content-tab-one .img-logo {
+        width: 96px;
+        height: 96px;
+        padding: .3rem;
+    }
+    #content-tab-one .text-logo {
+        font-size: 216%;
+    }
+    #content-tab-one .description {
+        padding-top: .5rem;
+    }
+    #content-tab-one .content-actions {
+        margin: 1rem .5rem .5rem .5rem;
+    }
+    #content-tab-one .content-actions a {
+        margin: auto .5rem auto .5rem;
+    }
+    #content-tab-one .container-details {
+        margin-bottom: 1.5rem;
+    }
+    #content-tab-two {
+        padding: 1rem .25rem 0 .25rem;
+    }
+    #content-tab-three {
+        padding: .5rem .25rem 0 .25rem;
+    }
+    /**
+     * Responsive for file --> widgets.css
+     *
+     */
+    /* DRAWER */
+    .drawer {}
+    .drawer-nav .drawer-item {
+        padding: 0 .7rem 0 1rem;
+    }
+    /* TOOLBAR */
+    .toolbar {
+        min-height: var(--toolbar-height);
+        padding: 0 16px;
+        box-shadow: rgba(0, 0, 0, 0.0) 0px 0px 16px;
+    }
+    .toolbar .toolbar-icon {
+        line-height: var(--toolbar-height);
+        display: inline-block;
+        cursor: pointer;
+    }
+    .toolbar .toolbar-title {
+        line-height: var(--toolbar-height);
+        padding-left: 16px;
+        font-size: 124%;
+    }
+    .toolbar .toolbar-menu {
+        line-height: var(--toolbar-height);
+        display: none;
+    }
+    /* ACORDEON */
+    .container-paragraph {
+        border: 1px solid rgba(0, 0, 0, .2);
+    }
+    .paragraph-header {
+        padding: .8rem;
+        background-color: #314047;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 6px;
+        font-size: 90%;
+        text-transform: uppercase;
+        text-align: center;
+        list-style: none;
+        transition: all 0.3s;
+    }
+    /* TABS */
+    .container-tabs {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .nav-tabs {
+        width: 100%;
+        min-height: 2.5rem;
+        overflow: auto;
+    }
+    .tab {
+        font-size: 90%;
+        border-bottom: 3px solid #314047;
+    }
+    .nav-tabs .active {
+        background-color: #314047 !important;
+        color: #2eb398 !important;
+        border-bottom: 3px solid #2eb398 !important;
+    }
+    /* BUTTONS */
+    .btn-default {
+        padding: .8rem 2.5rem;
+    }
+    .btn-accent {
+        padding: .8rem 2.5rem;
+    }
+    .btn-accent2 {
+        padding: .8rem 2.5rem;
+    }
+    .btn-bordered-accent {
+        padding: .8rem 2.5rem;
+    }
+    .btn-rounded-default {
+        padding: .8rem 2.5rem;
+    }
+    .btn-rounded-accent {
+        padding: .8rem 2.5rem;
+    }
+    .btn-rounded-accent2 {
+        padding: .8rem 2.5rem;
+    }
+    .btn-rounded-accent-invert {
+        padding: .8rem 2.5rem;
+    }
+    .btn-rounded-bordered-accent {
+        padding: .8rem 2.5rem;
+    }
+    .btn-link {
+        padding: .5rem 2rem;
+    }
+    .btn-flat {
+        padding: .8rem 2.5rem;
+    }
+    /* FAB */
+    .fab-normal {
+        width: 48px;
+        height: 48px;
+    }
+    .fab-normal span {
+        line-height: 48px;
+    }
+    .fab-small {
+        width: 36px;
+        height: 36px;
+    }
+    .fab-small span {
+        line-height: 36px;
+    }
+    .fab-mini {
+        width: 36px;
+        height: 36px;
+    }
+    .fab-mini span {
+        line-height: 36px;
+    }
+    /* CARDS */
+    /* DIALOGS */
+    .dialog {
+        border-radius: 4px;
+    }
+    .dialog-title {
+        padding: 1.5rem .5rem 1rem .5rem;
+    }
+    .dialog-message {
+        padding: 0px 1rem 0px 1rem;
+    }
+    /* DIALOG ALERT */
+    .dialog-alert {
+        width: 80%;
+        height: 60%;
+    }
+    .dialog-alert .dialog-actions {
+        padding: 0 1rem .5rem 1rem;
+    }
+    .dialog-alert .btn-dialog-positive {
+        padding: .5rem 1rem;
+    }
+    /* DIALOG CONFIRM */
+    .dialog-confirm {
+        width: 80%;
+        height: 40%;
+    }
+    .dialog-confirm .btn-dialog-negative {
+        line-height: 1.5rem;
+    }
+    .dialog-confirm .btn-dialog-positive {
+        line-height: 1.5rem;
+    }
+    /* FORMS */
+    /**
+     * Responsive for file --> general.css
+     *
+     */
+    /* FONTS AND TEXT APPEARANCES */
+    .font-size-xlarge {
+        font-size: 160%;
+        font-weight: 100;
+    }
+    .font-size-large {
+        font-size: 130%;
+        font-weight: 100;
+    }
+    .font-size-normal {
+        font-size: 90%;
+        font-weight: 100;
+    }
+    .font-size-small {
+        font-size: 80%;
+        font-weight: 100;
+    }
+    /* CONTAINERS AND LAYOUTS */
+    .layout-container-viewport>div[class^='column-'] {
+        /*Center vertical*/
+        transform: translateY(0%);
+        top: 0%;
+    }
+    /* GRID AND COLUMNS */
+    .columns > .column-2.is-container {
+        width: 100%;
+    }
+    .columns > .column-3.is-container {
+        width: 100%;
+    }
+    .columns > .column-4.is-container {
+        width: 100%;
+    }
+    .columns > .column-5.is-container {
+        width: 25%;
+    }
+    .columns > .column-6.is-container {
+        width: 25%;
+    }
+    .columns > .column-2.is-item {
+        width: 100%;
+    }
+    .columns > .column-3.is-item {
+        width: 100%;
+    }
+    .columns > .column-4.is-item {
+        width: 50%;
+    }
+    .columns > .column-5.is-item {
+        width: 50%;
+    }
+    .columns > .column-6.is-item {
+        width: 33.33%;
+    }
+    .columns > .column-2.is-widget {
+        width: 50%;
+    }
+    .columns > .column-3.is-widget {
+        width: 33.33%;
+    }
+    .columns > .column-4.is-widget {
+        width: 25%;
+    }
+    .columns > .column-5.is-widget {
+        width: 20%;
+    }
+    .columns > .column-6.is-widget {
+        width: 16.66%;
+    }
+    /* MARGENES LATERALES */
+    .padding-layout-square-large {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    .padding-layout-square-normal {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .padding-layout-square-small {
+        padding: .5rem .5rem .5rem .5rem;
+    }
+    .padding-layout-vertical-large {
+        padding: 2rem 0 2rem 0;
+    }
+    .padding-layout-vertical-normal {
+        padding: 1rem 0 1rem 0;
+    }
+    .padding-layout-vertical-small {
+        padding: .5rem 0 .5rem 0;
+    }
+    .padding-layout-horizontal-large {
+        padding: 0 2rem 0 2rem;
+    }
+    .padding-layout-horizontal-normal {
+        padding: 0 1rem 0 1rem;
+    }
+    .padding-layout-horizontal-small {
+        padding: 0 .5rem 0 .5rem;
+    }
+    /* MARGENES Y ESPACIADO EN TEXTOS */
+    .title {
+        padding-bottom: .5rem;
+    }
+    .subtitle {
+        padding-bottom: .25rem;
+    }
+    .content-actions {
+        margin: .5rem auto .5rem auto;
+    }
+    /* UTILS CLASSES FOR SCRIPT */
+    .inset-top {
+        margin-top: 48px !important;
+        /*Tamaño del toolbar*/
+    }
+    /* CONTAINERS AND BOXS */
+    .box-container-dev {
+        padding: .5rem;
+    }
+    .dev-banner {
+        width: 100%;
+        height: 6rem;
+    }
+    .dev-perfil {
+        margin-top: 4rem;
+        margin-left: -2rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    .dev-info {
+        width: 100%;
+        height: auto;
+        padding: 1rem 1rem 0rem 1rem;
+        margin-top: 1.5rem;
+    }
+    .dev-title {
+        padding-bottom: .5rem;
+    }
+    .dev-description {
+        padding-bottom: .4rem;
+    }
+    .dev-btn {
+        margin: .5rem auto .9rem auto !important;
+    }
+    .dev-social {
+        min-height: 42px;
+    }
+    .dev-social a {
+        line-height: 42px;
+    }
+    .box-container-intro {
+        padding: .25rem;
+    }
+    .box-intro {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: .5rem;
+    }
+    .box-intro img {
+        min-width: 96px;
+        max-width: 128px;
+        min-height: 96px;
+        max-height: 128px;
+        padding: .5rem;
+    }
+    .box-intro h3 {
+        padding: .3rem;
+    }
+}
+/* Small devices (tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    :root {
+        /**
+         * [dimens description]
+         * @type {[dimens]}
+         */
+         --toolbar-height: 56px;
+
+         --text-size-display: 56px;
+         --text-size-header: 36px;
+         --text-size-title: 24px;
+         --text-size-content: 16px;
+         --text-size-body: 12px;
+         --text-size-mini: 10px;
+    }
+
+    /**
+     * Responsive for file --> style.css
+     *
+     */
+    /* BANNER */
+    /* CUERPO CONTAINER */
+    .content-intro-box {
+        padding: 1rem;
+    }
+    /* FOOTER */
+    /**
+     * Responsive for file --> about.html
+     *
+     */
+    /* BANNER */
+    .padding-layout-banner-about {
+        padding: 1.5rem 0 1.5rem 0;
+    }
+    #content-tab-one {
+        padding: 1.5rem 1rem 0 1rem;
+    }
+    #content-tab-one .container-logo {
+        padding-right: 1rem;
+        margin-bottom: 2rem;
+    }
+    #content-tab-one .img-logo {
+        width: 108px;
+        height: 108px;
+        padding: .5rem;
+    }
+    #content-tab-one .text-logo {
+        font-size: 228%;
+    }
+    #content-tab-one .description {
+        padding-top: .75rem;
+    }
+    #content-tab-one .content-actions {
+        margin: 1.5rem .75rem 2rem .75rem;
+    }
+    #content-tab-one .content-actions a {
+        margin: auto .75rem auto .75rem;
+    }
+    #content-tab-one .container-details {
+        margin-bottom: 1.5rem;
+    }
+    #content-tab-two {
+        padding: 1rem 1rem 0 1rem;
+    }
+    #content-tab-three {
+        padding: 1rem 1rem 0 1rem;
+    }
+    /**
+     * Responsive for file --> widgets.css
+     *
+     */
+    /* TOOLBAR */
+    .toolbar {
+        min-height: var(--toolbar-height);
+        padding: 0 24px;
+    }
+    .toolbar .toolbar-icon {
+        line-height: var(--toolbar-height);
+        display: inline-block;
+        cursor: pointer;
+    }
+    .toolbar .toolbar-title {
+        line-height: var(--toolbar-height);
+        padding-left: 16px;
+    }
+    .toolbar .toolbar-menu {
+        line-height: var(--toolbar-height);
+        display: none;
+    }
+    /* ACORDEON */
+    .container-paragraph {}
+    .paragraph-header {
+        padding: .75rem;
+    }
+    /* TABS */
+    .container-tabs {}
+    .nav-tabs {
+        width: 65%;
+        min-height: 2.5rem;
+    }
+    /* BUTTONS */
+    .btn-default {
+        padding: .8rem 2.5rem;
+    }
+    .btn-accent {
+        padding: .8rem 2.5rem;
+    }
+    .btn-accent2 {
+        padding: .8rem 2.5rem;
+    }
+    .btn-bordered-accent {
+        padding: .8rem 2.5rem;
+    }
+    .btn-rounded-default {
+        padding: .8rem 2.5rem;
+    }
+    .btn-rounded-accent {
+        padding: .8rem 2.5rem;
+    }
+    .btn-rounded-accent2 {
+        padding: .8rem 2.5rem;
+    }
+    .btn-rounded-accent-invert {
+        padding: .8rem 2.5rem;
+    }
+    .btn-rounded-bordered-accent {
+        padding: .8rem 2.5rem;
+    }
+    .btn-link {
+        padding: .5rem 2rem;
+    }
+    .btn-flat {
+        padding: .8rem 2.5rem;
+    }
+    /* FAB */
+    .fab-normal {
+        width: 48px;
+        height: 48px;
+    }
+    .fab-normal span {
+        line-height: 48px;
+    }
+    .fab-small {
+        width: 36px;
+        height: 36px;
+    }
+    .fab-small span {
+        line-height: 36px;
+    }
+    .fab-mini {
+        width: 36px;
+        height: 36px;
+    }
+    .fab-mini span {
+        line-height: 36px;
+    }
+    /* CARDS */
+    /* DIALOGS */
+    .dialog {
+        border-radius: 5px;
+    }
+    .dialog-title {
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+    .dialog-message {
+        padding: 0px 2rem 0px 2rem;
+    }
+    /* DIALOG ALERT */
+    .dialog-alert {
+        width: 60%;
+        height: 50%;
+    }
+    .dialog-alert .dialog-actions {
+        padding: 0 1rem .5rem 1rem;
+    }
+    .dialog-alert .btn-dialog-positive {
+        padding: .6rem 1.5rem;
+    }
+    /* DIALOG CONFIRM */
+    .dialog-confirm {
+        width: 60%;
+        height: 40%;
+    }
+    .dialog-confirm .btn-dialog-negative {
+        line-height: 1.7rem;
+    }
+    .dialog-confirm .btn-dialog-positive {
+        line-height: 1.7rem;
+    }
+    /* FORMS */
+    /**
+     * Responsive for file --> general.css
+     *
+     */
+    /* FONTS AND TEXT APPEARANCES */
+    .font-size-xlarge {
+        font-size: 200%;
+        font-weight: 100;
+    }
+    .font-size-large {
+        font-size: 130%;
+        font-weight: 100;
+    }
+    .font-size-normal {
+        font-size: 90%;
+        font-weight: 100;
+    }
+    .font-size-small {
+        font-size: 80%;
+        font-weight: 100;
+    }
+    /* CONTAINERS AND LAYOUTS */
+    .layout-container-viewport>div[class^='column-'] {
+        /*Center vertical*/
+        transform: translateY(-50%);
+        top: 40%;
+    }
+    /* GRID AND COLUMN  */
+    .columns > .column-2.is-container {
+        width: 50%;
+    }
+    .columns > .column-3.is-container {
+        width: 33.33%;
+    }
+    .columns > .column-4.is-container {
+        width: 25%;
+    }
+    .columns > .column-5.is-container {
+        width: 20%;
+    }
+    .columns > .column-6.is-container {
+        width: 16.66%;
+    }
+    .columns > .column-2.is-item {
+        width: 50%;
+    }
+    .columns > .column-3.is-item {
+        width: 33.33%;
+    }
+    .columns > .column-4.is-item {
+        width: 25%;
+    }
+    .columns > .column-5.is-item {
+        width: 20%;
+    }
+    .columns > .column-6.is-item {
+        width: 16.66%;
+    }
+    .columns > .column-2.is-widget {
+        width: 50%;
+    }
+    .columns > .column-3.is-widget {
+        width: 33.33%;
+    }
+    .columns > .column-4.is-widget {
+        width: 25%;
+    }
+    .columns > .column-5.is-widget {
+        width: 20%;
+    }
+    .columns > .column-6.is-widget {
+        width: 16.66%;
+    }
+    /* MARGENES LATERALES */
+    .padding-layout-square-large {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    .padding-layout-square-normal {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .padding-layout-square-small {
+        padding: .5rem .5rem .5rem .5rem;
+    }
+    .padding-layout-vertical-large {
+        padding: 2rem 0 2rem 0;
+    }
+    .padding-layout-vertical-normal {
+        padding: 1rem 0 1rem 0;
+    }
+    .padding-layout-vertical-small {
+        padding: .5rem 0 .5rem 0;
+    }
+    .padding-layout-horizontal-large {
+        padding: 0 2rem 0 2rem;
+    }
+    .padding-layout-horizontal-normal {
+        padding: 0 1rem 0 1rem;
+    }
+    .padding-layout-horizontal-small {
+        padding: 0 .5rem 0 .5rem;
+    }
+    /* MARGENES Y ESPACIADO EN TEXTOS */
+    .title {
+        padding-bottom: .75rem;
+    }
+    .subtitle {
+        padding-bottom: .5rem;
+    }
+    .content-actions {
+        margin: .75rem auto .75rem auto;
+    }
+    /* UTILS CLASSES FOR SCRIPT */
+    .inset-top {
+        margin-top: 56px !important;
+        /*Tamaño del toolbar*/
+    }
+    /* CONTAINERS AND BOXS */
+    .box-container-dev {
+        padding: .5rem;
+    }
+    .dev-banner {
+        width: 100%;
+        height: 8rem;
+    }
+    .dev-perfil {
+        margin-top: 5.75rem;
+        margin-left: -2.25rem;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .dev-info {
+        width: 100%;
+        height: auto;
+        padding: 1rem 1rem 0rem 1rem;
+        margin-top: 1.7rem;
+    }
+    .dev-title {
+        padding-bottom: 1rem;
+    }
+    .dev-description {
+        padding-bottom: .75rem;
+    }
+    .dev-btn {
+        margin: .5rem auto 1.25rem auto !important;
+    }
+    .dev-social {
+        min-height: 42px;
+    }
+    .dev-social a {
+        line-height: 42px;
+    }
+    .box-container-intro {
+        padding: .5rem;
+    }
+    .box-intro {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+    .box-intro img {
+        min-width: 96px;
+        max-width: 128px;
+        min-height: 96px;
+        max-height: 128px;
+        padding: 1rem;
+    }
+    .box-intro h3 {
+        padding: .5rem;
+    }
+}
+/* Tablets (landscape) */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* Styles */
+}
+/* Tablets (portrait) */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    /* Styles */
+}
+/* Medium devices (desktops and portátiles, 992px and up) */
+
+@media screen and (min-width: 1024px) and (max-width: 1224px) {
+    /* Styles */
+}
+/* Large devices (large desktops, 1200px and up) */
+
+@media screen and (min-width: 1824px) {
+    /* Styles */
+}
