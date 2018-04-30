@@ -1,3 +1,4 @@
+"use strict";
 
 /*
 Util Javascript
@@ -5,12 +6,8 @@ Util Javascript
 
 // SIMULACION DE CARGA AL INICIR LA PAGINA
 function cargarAlIniciarPagina() {
-
-    "use strict";
-
-    //var load_screem = document.getElementById('load-screem')
+    //let load_screem = document.getElementById('load-screem')
     //document.body.removeChild(load_screem);
-
 }
 
 window.addEventListener('load', cargarAlIniciarPagina, false);
@@ -30,8 +27,8 @@ function shareWebSite(url) {
  * Agrega el sitio web a los favoritos del navegador.
  */
 function addToFavorites() {
-    var title = "GameStore-Tu mundo Digital";
-    var url = "http://shop-gamestore.somee.com";
+    let title = "GameStore-Tu mundo Digital";
+    let url = "http://shop-gamestore.somee.com";
     //para firefox
     if (window.sidebar)
         window.sidebar.addPanel(title, url, "");
@@ -46,12 +43,12 @@ function addToFavorites() {
 
 
 //EFECTO RIPPLE
-var rippleFlat = document.querySelectorAll('.ripple-container-flat'); //Guardamos un array con todos los botones. Para compatibilidad con navegadores antiguos puedes reemplazar el querySelectorAll con un getElementsByClassName
+let rippleFlat = document.querySelectorAll('.ripple-container-flat'); //Guardamos un array con todos los botones. Para compatibilidad con navegadores antiguos puedes reemplazar el querySelectorAll con un getElementsByClassName
 [].forEach.call(rippleFlat, function(e) {
   e.addEventListener('click', function(e) {
     /*Esto se activará cada vez que haya un click en un botón*/
-    var offset = this.parentNode.getBoundingClientRect(); //Toma los limites del padre (el padre es el <button> para los botones, o el <div> principal en la imagen
-    var effect = this.querySelector('.ripple-effect-flat'); //Toma SOLO el span ripple-effect que está dentro del boton clicado
+    let offset = this.parentNode.getBoundingClientRect(); //Toma los limites del padre (el padre es el <button> para los botones, o el <div> principal en la imagen
+    let effect = this.querySelector('.ripple-effect-flat'); //Toma SOLO el span ripple-effect que está dentro del boton clicado
     /*pageX y pageY devuelven el punto de la página en el cual se hizo clic, siendo el origen la esquina superior izquierda. En offset.top y offset.left tenemos almacenados la distancia al origen de la esquina superior izquierda del botón. La resta de estos elementos nos indicará el punto en el cual se hizo clic, teniendo como origen la esquina superior izquierda del botón*/
     effect.style.top = (e.pageY - offset.top) + "px";
     effect.style.left = (e.pageX - offset.left) + "px";
@@ -67,12 +64,12 @@ var rippleFlat = document.querySelectorAll('.ripple-container-flat'); //Guardamo
   e.addEventListener('MSAnimationEnd', removeAnimation);
 });
 
-var rippleWidget = document.querySelectorAll('.ripple-container-widget'); //Guardamos un array con todos los botones. Para compatibilidad con navegadores antiguos puedes reemplazar el querySelectorAll con un getElementsByClassName
+let rippleWidget = document.querySelectorAll('.ripple-container-widget'); //Guardamos un array con todos los botones. Para compatibilidad con navegadores antiguos puedes reemplazar el querySelectorAll con un getElementsByClassName
 [].forEach.call(rippleWidget, function(e) {
   e.addEventListener('click', function(e) {
     /*Esto se activará cada vez que haya un click en un botón*/
-    var offset = this.parentNode.getBoundingClientRect(); //Toma los limites del padre (el padre es el <button> para los botones, o el <div> principal en la imagen
-    var effect = this.querySelector('.ripple-effect-widget'); //Toma SOLO el span ripple-effect que está dentro del boton clicado
+    let offset = this.parentNode.getBoundingClientRect(); //Toma los limites del padre (el padre es el <button> para los botones, o el <div> principal en la imagen
+    let effect = this.querySelector('.ripple-effect-widget'); //Toma SOLO el span ripple-effect que está dentro del boton clicado
     /*pageX y pageY devuelven el punto de la página en el cual se hizo clic, siendo el origen la esquina superior izquierda. En offset.top y offset.left tenemos almacenados la distancia al origen de la esquina superior izquierda del botón. La resta de estos elementos nos indicará el punto en el cual se hizo clic, teniendo como origen la esquina superior izquierda del botón*/
     effect.style.top = (e.pageY - offset.top) + "px";
     effect.style.left = (e.pageX - offset.left) + "px";

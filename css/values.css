@@ -95,6 +95,7 @@
      --toolbar-height: 56px;
      --container-main-height: calc(100vh - var(--toolbar-height)); /*tamaño del page - tamaño del toolbar*/
      --container-main-collapse-height: calc(85vh - var(--toolbar-height)); /*tamaño del page - tamaño del toolbar*/
+     --border-inset: 3px;
 
      --text-size-display: 56px;
      --text-size-header: 36px;

@@ -171,13 +171,12 @@ DRAWER
     color: rgba(255, 64, 129, .7);
 }
 .drawer .active {
-    border-left: 3px solid var(--accent-color);
+    border-left: var(--border-inset) solid var(--accent-color);
     color: var(--accent-color) !important;
 }
 /*
 TOOLBAR
 */
-
 .toolbar {
     display: block;
     align-items: center;
@@ -189,20 +188,24 @@ TOOLBAR
     padding: 0 1rem 0 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 16px;
 }
-.toolbar .toolbar-icon {
-    float: left;
+.toolbar .icon {
+    width: 24px;
+    height: var(--toolbar-height);
     line-height: var(--toolbar-height);
+    float: left;
     cursor: pointer;
     white-space: nowrap;
     transition: all 0.3s;
 }
-.toolbar .toolbar-icon:hover {
+.toolbar .icon:hover path {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
-.toolbar .toolbar-title {
+.toolbar .title {
     float: left;
     line-height: var(--toolbar-height);
     padding-left: 1rem;
+    padding-bottom: 0;
     color: #FFFFFF;
     font-family: 'Roboto Regular';
     text-transform: capitalize;
@@ -212,13 +215,13 @@ TOOLBAR
     white-space: nowrap;
     text-align: left;
 }
-.toolbar .toolbar-menu {
+.toolbar .menu {
     display: block;
     float: right;
 }
-.toolbar .toolbar-menu a {
+.toolbar .menu a {
     display: inline-block;
-    line-height: 53px;
+    line-height: calc(var(--toolbar-height) - var(--border-inset));
     background: none;
     color: rgba(255, 255, 255, 0.7);
     text-transform: capitalize;
@@ -226,25 +229,26 @@ TOOLBAR
     border-bottom: 3px solid transparent;
     transition: all 0.2s ease-in-out;
 }
-.toolbar .toolbar-menu a:hover {
+.toolbar .menu a:hover {
     background-color: rgba(255, 255, 255, 0);
     color: rgba(255, 255, 255, 0.4);
 }
-.toolbar .toolbar-menu a:active {
+.toolbar .menu a:active {
     background: rgba(255, 255, 255, 0.0);
     color: var(--accent-color);
 }
-.toolbar .toolbar-menu a span[class^='icon-'] {
+.toolbar .menu a span[class^='icon-'] {
     display: inline-block;
     margin-right: .5rem;
 }
-.toolbar .toolbar-menu a span:not([class*='icon']) {
+.toolbar .menu a span:not([class*='icon']) {
     display: inline-block;
 }
 .toolbar .active {
     color: var(--accent-color) !important;
-    border-bottom: 3px solid var(--accent-color) !important;
+    border-bottom: var(--border-inset) solid var(--accent-color) !important;
 }
+
 /*
 ACORDEON
 */

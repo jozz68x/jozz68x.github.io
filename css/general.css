@@ -307,6 +307,16 @@
     margin: 1.5rem auto 1rem auto;
 }
 
+/* ICONS */
+.icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.icon:hover path {
+    fill: rgba(255, 255, 255, 0.4);
+}
+
 /* IMAGES */
 .img-responsive {
     width: 100%;
@@ -498,11 +508,11 @@
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.6) -4px 0px 16px;
 }
-    .collapse-page .toolbar .toolbar-menu a span[class^='icon-'] {
+    .collapse-page .toolbar .menu a span[class^='icon-'] {
         display: inline-block;
         margin-right: 0;
     }
-    .collapse-page .toolbar .toolbar-menu a span:not([class*='icon']) {
+    .collapse-page .toolbar .menu a span:not([class*='icon']) {
         display: none;
     }
     .collapse-page .toolbar .active {

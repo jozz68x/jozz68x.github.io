@@ -11,7 +11,7 @@
          * [dimens description]
          * @type {[dimens]}
          */
-         --toolbar-height: 48px;
+         --toolbar-height: 56px;
 
          --text-size-display: 56px;
          --text-size-header: 36px;
@@ -100,17 +100,18 @@
         padding: 0 16px;
         box-shadow: rgba(0, 0, 0, 0.0) 0px 0px 16px;
     }
-    .toolbar .toolbar-icon {
+    .toolbar .icon {
+        width: 24px;
+        height: var(--toolbar-height);
         line-height: var(--toolbar-height);
         display: inline-block;
-        cursor: pointer;
     }
-    .toolbar .toolbar-title {
+    .toolbar .title {
         line-height: var(--toolbar-height);
         padding-left: 16px;
         font-size: 124%;
     }
-    .toolbar .toolbar-menu {
+    .toolbar .menu {
         line-height: var(--toolbar-height);
         display: none;
     }
@@ -487,16 +488,17 @@
         min-height: var(--toolbar-height);
         padding: 0 24px;
     }
-    .toolbar .toolbar-icon {
+    .toolbar .icon {
+        width: 24px;
+        height: var(--toolbar-height);
         line-height: var(--toolbar-height);
         display: inline-block;
-        cursor: pointer;
     }
-    .toolbar .toolbar-title {
+    .toolbar .title {
         line-height: var(--toolbar-height);
         padding-left: 16px;
     }
-    .toolbar .toolbar-menu {
+    .toolbar .menu {
         line-height: var(--toolbar-height);
         display: none;
     }
