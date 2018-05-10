@@ -56,9 +56,9 @@
     <!-- ESTILOS  -->
     <link type="text/css" rel="stylesheet" href="css/values.css" />
     <link type="text/css" rel="stylesheet" href="css/default.css" />
-    <link type="text/css" rel="stylesheet" href="css/styles.css" />
-    <link type="text/css" rel="stylesheet" href="css/general.css" />
+    <link type="text/css" rel="stylesheet" href="css/global.css" />
     <link type="text/css" rel="stylesheet" href="css/widgets.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
     <link type="text/css" rel="stylesheet" href="css/responsive.css" />
 
     <!-- ICON-FONTS -->
@@ -153,10 +153,9 @@
     <!-- FIN DIALOG CONFIRM -->
 
     <!-- MENU DRAWER -->
-    <!-- <div id="dim-screen-drawer" class="dim-screen elevation-index-4"></div> -->
     <aside id="drawer-main" class="drawer elevation-index-3 unselect center-vertical">
         <div class="drawer-container">
-            <div class="drawer-header align-center">
+            <div class="header align-center">
                 <div class="container" onclick="showModal();">
                     <div class="ripple-container-widget">
                         <span class="ripple-effect-widget"></span>
@@ -170,19 +169,19 @@
                     <small class="subtitle">Desarrollador fronted y diseñador UX/UI</small>
                 </div>
                 <div class="social columns font-size-normal align-center">
-                    <a href="#" title="Ir a google plus" class="drawer-item column-3 is-widget" onclick="showDialogConfirm('Google Plus', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nihil sunt culpa praesentium atque natus nam quos vel amet. Odit nostrum porro et optio debitis impedit enim culpa, obcaecati quibusdam.');">
+                    <a href="#" title="Ir a google plus" class="item column-3 is-widget" onclick="showDialogConfirm('Google Plus', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nihil sunt culpa praesentium atque natus nam quos vel amet. Odit nostrum porro et optio debitis impedit enim culpa, obcaecati quibusdam.');">
                         <div class="ripple-container-widget">
                             <span class="ripple-effect-widget"></span>
                         </div>
                         <span class="icon-google-plus"></span>
                     </a>
-                    <a href="#" title="Ir a twitter" class="drawer-item column-3 is-widget" onclick="showDialogConfirm('Twitter', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores veniam deserunt, ratione iusto asperiores molestiae voluptatibus nisi, aut temporibus esse enim, nihil architecto magni veritatis minus amet possimus odio necessitatibus.');">
+                    <a href="#" title="Ir a twitter" class="item column-3 is-widget" onclick="showDialogConfirm('Twitter', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores veniam deserunt, ratione iusto asperiores molestiae voluptatibus nisi, aut temporibus esse enim, nihil architecto magni veritatis minus amet possimus odio necessitatibus.');">
                         <div class="ripple-container-widget">
                             <span class="ripple-effect-widget"></span>
                         </div>
                         <span class="icon-twitter"></span>
                     </a>
-                    <a href="#" title="Ir a github" class="drawer-item column-3 is-widget" onclick="showDialogConfirm('Github', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aliquam, obcaecati, recusandae odit earum vel iure sequi explicabo quam a ullam repellat iste. Tempora nisi minima quia dicta quo corporis.');">
+                    <a href="#" title="Ir a github" class="item column-3 is-widget" onclick="showDialogConfirm('Github', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aliquam, obcaecati, recusandae odit earum vel iure sequi explicabo quam a ullam repellat iste. Tempora nisi minima quia dicta quo corporis.');">
                         <div class="ripple-container-widget">
                             <span class="ripple-effect-widget"></span>
                         </div>
@@ -191,33 +190,33 @@
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <nav class="drawer-nav font-appearance-regular">
+            <nav class="nav font-appearance-regular">
                 <div class="divider divider-dark"></div>
-                <ul id="drawer-menu" class="align-center">
-                    <li>
-                        <a href="/" class="drawer-item">Home</a>
+                <ul class="menu align-center">
+                    <li data-load="./pages/home.html">
+                        <a href="#" class="item">Home</a>
+                        <div class="divider divider-dark"></div>
                     </li>
-                    <li class="divider divider-dark"></li>
-                    <li>
-                        <a href="/pages/about.html" class="drawer-item">About</a>
+                    <li data-load="./pages/about.html">
+                        <a href="#" class="item">About</a>
+                        <div class="divider divider-dark"></div>
                     </li>
-                    <li class="divider divider-dark"></li>
-                    <li>
-                        <a href="/pages/skills.html" class="drawer-item">Skills</a>
+                    <li data-load="./pages/skills.html">
+                        <a href="#" class="item">Skills</a>
+                        <div class="divider divider-dark"></div>
                     </li>
-                    <li class="divider divider-dark"></li>
-                    <li>
-                        <a href="/pages/projects.html" class="drawer-item">Projects</a>
+                    <li data-load="./pages/projects.html">
+                        <a href="#" class="item">Projects</a>
+                        <div class="divider divider-dark"></div>
                     </li>
-                    <li class="divider divider-dark"></li>
-                    <li>
-                        <a href="/pages/blog.html" class="drawer-item" onclick="showDialogAlert('Proximamente', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti beatae officia facere quos nisi, sed laboriosam impedit ex repudiandae sequi, saepe sit est quae non. Ea reprehenderit inventore suscipit impedit quisquam alias a, nam provident explicabo perspiciatis. Praesentium, in neque alias ducimus cupiditate dolorum nisi harum quod doloribus explicabo voluptas.');">Blog
+                    <li data-load="./pages/blog.html">
+                        <a href="#" class="item" onclick="showDialogAlert('Proximamente', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti beatae officia facere quos nisi, sed laboriosam impedit ex repudiandae sequi, saepe sit est quae non. Ea reprehenderit inventore suscipit impedit quisquam alias a, nam provident explicabo perspiciatis. Praesentium, in neque alias ducimus cupiditate dolorum nisi harum quod doloribus explicabo voluptas.');">Blog
                             <span class="pull-right">Coming soon</span>
                         </a>
+                        <div class="divider divider-dark"></div>
                     </li>
-                    <li class="divider divider-dark"></li>
-                    <li>
-                        <a href="/pages/contact.html" class="drawer-item">Contact</a>
+                    <li data-load="./pages/contact.html">
+                        <a href="#" class="item">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -229,7 +228,7 @@
     <div class="main-page elevation-index-4">
 
         <!-- TOOLBAR -->
-        <header class="toolbar elevation-index-3 elevation-shadow-normal unselect">
+        <header id="toolbar-main" class="toolbar elevation-index-3 elevation-shadow-normal unselect">
             <svg id="ic-hamburger" class="icon" viewBox="0 0 24 24">
                 <path fill="#FFFFFF" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
             </svg>
@@ -274,11 +273,15 @@
     <!-- FIN PAGE -->
 
     <!-- JAVASCRIPT -->
-    <script type="module" src="./js/constants.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Inicializa JQuery
+        });
+    </script>
     <script type="module" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/utilities.js"></script>
     <script type="text/javascript" src="./js/dialog.js"></script>
-    
+
 </body>
 
 </html>

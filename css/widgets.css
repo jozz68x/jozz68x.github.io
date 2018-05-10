@@ -18,10 +18,10 @@ DIM SCREEN
     background-color: #121314;
     transition: all 0.7s;
 }
+
 /*
 DRAWER
 */
-
 .drawer {
     width: 16rem;
     max-width: 90%;
@@ -36,7 +36,7 @@ DRAWER
     overflow-y: auto;
     transition: all 0.3s;
 }
-.drawer-header {
+.drawer .header {
     display: block;
     position: relative;
     width: 100%;
@@ -45,7 +45,7 @@ DRAWER
     transition: all 0.3s;
     cursor: pointer;
 }
-.drawer-header .profile {
+.drawer .header .profile {
     display: block;
     position: relative;
     height: 5rem;
@@ -56,15 +56,15 @@ DRAWER
     margin-bottom: .5rem;
     cursor: pointer;
 }
-.drawer-header .profile:hover {
+.drawer .header .profile:hover {
     box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 16px;
     transform: translateY(-1px);
 }
-.drawer-header .profile:active {
+.drawer .header .profile:active {
     filter: brightness(0.5);
     transform: translateY(0px);
 }
-.drawer-header .title {
+.drawer .header .title {
     display: block;
     padding-bottom: 4px;
     font-family: 'Roboto Regular';
@@ -72,72 +72,72 @@ DRAWER
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
-.drawer-header .title:hover {
+.drawer .header .title:hover {
     color: var(--accent-color-secondary);
     text-decoration: none;
 }
-.drawer-header .title:active {
+.drawer .header .title:active {
     color: var(--text-color-hovered);
     text-decoration: none;
 }
-.drawer-header .subtitle {
+.drawer .header .subtitle {
     display: block;
     padding-bottom: .5rem;
     font-family: 'Roboto Light';
     font-size: 100%;
     color: var(--text-color-secondary);
 }
-.drawer-header .social {
+.drawer .header .social {
     width: 100%;
     padding: 0 .5rem 0 .5rem;
 }
-.drawer-header .drawer-item {
+.drawer .header .item {
     padding: 1rem;
     color: var(--icon-color);
     border-radius: 3px;
 }
-.drawer-header .drawer-item:hover {
+.drawer .header .item:hover {
     background: rgba(255, 255, 255, 0.07);
     color: var(--accent-color);
 }
-.drawer-header .drawer-item:nth-child(1) {
+.drawer .header .item:nth-child(1) {
     color: var(--chameleon-red-500);
 }
-.drawer-header .drawer-item:nth-child(2) {
+.drawer .header .item:nth-child(2) {
     color: var(--chameleon-sky-blue-500);
     border-left: 1px solid var(--divider-color);
     border-right: 1px solid var(--divider-color);
 }
-.drawer-header .drawer-item:nth-child(3) {
+.drawer .header .item:nth-child(3) {
     color: var(--chameleon-purpple-500);
 }
-.drawer-header .drawer-item span[class^='icon-'] {
+.drawer .header .item span[class^='icon-'] {
     display: block;
 }
-.drawer-header .drawer-item span:not([class*='icon']) {
+.drawer .header .item span:not([class*='icon']) {
     display: block;
     margin-top: .5rem;
     font-size: 65%;
     text-transform: uppercase;
 }
-.drawer-nav {
+.drawer .nav {
     position: relative;
     width: 100%;
     height: auto;
 }
-.drawer-nav ul {
+.drawer .nav .menu {
     padding: 0.5rem 0rem;
     /*border-bottom: 1px inset rgba(0,0,0,.25);*/
 }
-.drawer-nav .divider {
+.drawer .nav .divider {
     width: 90%;
     margin: 0rem auto;
 }
-.drawer-nav li.divider {
+.drawer .nav li.divider {
     width: 65%;
     margin: 0rem auto;
 }
-.drawer-nav .drawer-item {
+.drawer .nav .item {
     display: block;
     padding: 0 1rem 0 1rem;
     line-height: 46px;
@@ -147,17 +147,17 @@ DRAWER
     border-left: 3px solid rgba(255, 255, 255, 0);
     transition: all 0.2s ease-in-out;
 }
-.drawer-nav .drawer-item:hover {
+.drawer .nav .item:hover {
     background-color: rgba(255, 255, 255, 0);
     color: var(--text-color-hovered);
 }
-.drawer-nav .drawer-item:active {
+.drawer .nav .item:active {
     color: var(--accent-color);
 }
-.drawer-nav .drawer-item span[class^='icon-'] {
+.drawer .nav .item span[class^='icon-'] {
     margin-right: .8rem;
 }
-.drawer-nav .drawer-item span:not([class*='icon']) {
+.drawer .nav .item span:not([class*='icon']) {
     position: absolute;
     margin-right: .25rem;
     background-color: none;
@@ -167,13 +167,14 @@ DRAWER
     text-transform: uppercase;
     letter-spacing: 0px;
 }
-.drawer-nav .drawer-item:hover span:not([class*='icon']) {
+.drawer .nav .item:hover span:not([class*='icon']) {
     color: rgba(255, 64, 129, .7);
 }
-.drawer .active {
-    border-left: var(--border-inset) solid var(--accent-color);
+.drawer .menu .active {
     color: var(--accent-color) !important;
+    border-left: var(--border-inset) solid var(--accent-color);
 }
+
 /*
 TOOLBAR
 */
@@ -244,7 +245,7 @@ TOOLBAR
 .toolbar .menu a span:not([class*='icon']) {
     display: inline-block;
 }
-.toolbar .active {
+.toolbar .menu .active {
     color: var(--accent-color) !important;
     border-bottom: var(--border-inset) solid var(--accent-color) !important;
 }

@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /*! inswall.css v1.0.0 */
 
 /**
@@ -10,13 +9,11 @@
  * 5. Set default elements.
  */
 
-
 @font-face {
 	font-family: 'Roboto Bold';
 	src: url('../fonts/text-font/Roboto-Bold.ttf');
 	font-weight: 200;
 }
-
 
 @font-face {
 	font-family: 'Roboto Medium';
@@ -36,52 +33,59 @@
 	font-weight: 200;
 }
 
-
 ::selection {
-	background-color: rgba(255,255,255,.2);
+	background-color: rgba(255, 255, 255, .2);
 	color: white;
 }
 
-
 /* MODELO DE CAJA */
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 /* SCROLLBARS */
+
 aside::-webkit-scrollbar,
 .custom-scroll::-webkit-scrollbar,
 div::-webkit-scrollbar {
 	width: 6px;
-   	height: 16px;
-   	background-color: rgba(0,0,0, .15);
+	height: 16px;
+	background-color: rgba(0, 0, 0, .15);
 }
+
 aside::-webkit-scrollbar-corner,
 .custom-scroll::-webkit-scrollbar-corner,
 div::-webkit-scrollbar-corner {
 	background-color: transparent;
 }
+
 aside::-webkit-scrollbar-thumb,
 .custom-scroll::-webkit-scrollbar-thumb,
 div::-webkit-scrollbar-thumb {
-   	background-color: #1C1C1F;
-   	border-top: 1px solid black;
-   	border-radius: 8px;
+	background-color: #1C1C1F;
+	border-top: 1px solid black;
+	border-radius: 8px;
 }
+
 aside::-webkit-scrollbar-thumb:hover,
 .custom-scroll::-webkit-scrollbar-thumb:hover,
 div::-webkit-scrollbar-thumb:hover {
-   	background-color: rgba(255,255,255, 0.4);
-   	border: 1px solid transparent;
+	background-color: rgba(255, 255, 255, 0.4);
+	border: 1px solid transparent;
 }
+
 aside::-webkit-scrollbar-thumb:active,
 .custom-scroll::-webkit-scrollbar-thumb:active,
 div::-webkit-scrollbar-thumb:active {
 	background-color: #10C888;
 	border: 1px solid transparent;
 }
+
 aside::-webkit-scrollbar-thumb:window-inactive,
 .custom-scroll::-webkit-scrollbar-thumb:window-inactive,
 div::-webkit-scrollbar-thumb:window-inactive {
@@ -89,8 +93,8 @@ div::-webkit-scrollbar-thumb:window-inactive {
 	border: 1px solid transparent;
 }
 
-
 /*ELEMENTOS GENERALES*/
+
 body {
 	font-family: 'Roboto Regular', sans-serif;
 	font-size: var(--text-size-content);
@@ -98,31 +102,44 @@ body {
 	color: var(--text-color-primary);
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
 	margin: 0rem !important;
 	/*cursor: default;*/
 }
+
 blockquote {
 	margin: 0rem;
 }
-font, p {
+
+font,
+p {
 	margin: 0rem !important;
 	line-height: 1.2em;
 	font-size: var(--text-size-content);
 	font-weight: 400 !important;
 }
-button{
-  	outline: 0px;
+
+button {
+	outline: 0px;
 }
+
 a {
 	text-decoration: none;
 	color: #FF4081;
 }
+
 ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
+
 img {
 	-moz-user-select: none;
 	-webkit-user-select: none;
@@ -130,20 +147,31 @@ img {
 	-o-user-select: none;
 	user-select: none;
 }
+
 iframe {
 	border: none;
 }
 
-
-
 /* INPUTS */
-input[type='text'], input[type='email'], input[type='password'],
-input[type='tel'], input[type='number'], input[type='url'],
-input[type='date'], input[type='datetime'], input[type='time'],
-input[type='search'], input[type='month'], input[type='week'],
-input[type='color'], input[type='file'], textarea, select {
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='tel'],
+input[type='number'],
+input[type='url'],
+input[type='date'],
+input[type='datetime'],
+input[type='time'],
+input[type='search'],
+input[type='month'],
+input[type='week'],
+input[type='color'],
+input[type='file'],
+textarea,
+select {
 	padding: .75rem 1rem;
-	border: 1px solid  rgba(255, 255, 255, 0);
+	border: 1px solid rgba(255, 255, 255, 0);
 	outline: none;
 	margin: 5px auto;
 	border-radius: 0;
@@ -153,21 +181,36 @@ input[type='color'], input[type='file'], textarea, select {
 	overflow: hidden;
 	font-family: 'Roboto Regular';
 }
-input[type='text']:focus, input[type='email']:focus, input[type='password']:focus,
-input[type='tel']:focus, input[type='number']:focus, input[type='url']:focus,
-input[type='range']:focus, input[type='date']:focus, input[type='datetime']:focus,
-input[type='search']:focus, input[type='month']:focus, input[type='week']:focus,
-input[type='time']:focus, input[type='color']:focus, input[type='file']:focus,
-textarea:focus, select:focus {
-	outline: none; /* reset especifico para Chrome/Safari */
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='tel']:focus,
+input[type='number']:focus,
+input[type='url']:focus,
+input[type='range']:focus,
+input[type='date']:focus,
+input[type='datetime']:focus,
+input[type='search']:focus,
+input[type='month']:focus,
+input[type='week']:focus,
+input[type='time']:focus,
+input[type='color']:focus,
+input[type='file']:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	/* reset especifico para Chrome/Safari */
 	border: 1px solid #10C888;
 }
 
 textarea {
-	resize: vertical; /* esta propiedad es para que el textarea no sea redimensionable */
+	resize: vertical;
+	/* esta propiedad es para que el textarea no sea redimensionable */
 }
 
-input[type="checkbox"]:checked, input[type="radio"]:checked {
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
 	background-color: #35c35f;
 	border: 5px solid #35c35f;
 }
@@ -180,9 +223,13 @@ input[type=range] {
 select:focus option:checked:hover {
 	background-color: rgb(53, 140, 61);
 }
+
 select:focus::-ms-value {
 	background-color: #35c35f;
 }
-option:checked, select:focus::-ms-value, select:focus option:checked:hover{
+
+option:checked,
+select:focus::-ms-value,
+select:focus option:checked:hover {
 	background-color: #35c35f;
 }
